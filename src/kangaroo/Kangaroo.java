@@ -14,8 +14,33 @@ public class Kangaroo {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        Flyers noo = new Flyers();
+        noo.name = "Not Kazooie";
+        noo.talk();
+        
+        Animal woo = new Animal();
+        woo.name = "Banjo";
+        woo.talk();
+        
+
     }
     
+}
+
+class Animal {
+    public String name = "Animal";
+    public String food = "Grass";
+    
+    public void talk() {
+        System.out.println(name + ": Woah!");
+    }
+}
+
+class Flyers extends Animal { //female kangaroo so it makes more sense
+    public void talk() {
+        System.out.println(name + ": Look at mah baby!");
+    }
 }
