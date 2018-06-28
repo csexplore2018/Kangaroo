@@ -25,6 +25,10 @@ public class Kangaroo {
         woo.name = "Banjo";
         woo.talk();
         
+        Joey boo = new Joey();
+        boo.name = "Joey";
+        boo.talk();
+        
 
     }
     
@@ -42,5 +46,11 @@ class Animal {
 class Flyers extends Animal { //female kangaroo so it makes more sense
     public void talk() {
         System.out.println(name + ": Look at mah baby!");
+    }
+}
+
+class Joey extends Animal{
+    public void talk(){
+        System.out.println(name + ": I'm a baby kangaroooo");
     }
 }
